@@ -11,6 +11,7 @@ body {
   align-items: center;
   background-image: var(--gradient-6);
   background-size: cover;
+  margin: 0;
 }
 
 .display.numbers {
@@ -64,7 +65,6 @@ select {
 
 .hidden {
   visibility: hidden;
-
 }
 
 .visible {
