@@ -1,0 +1,72 @@
+@import "https://unpkg.com/open-props";
+
+:root {
+  --gap: var(--size-3);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--gradient-6);
+  background-size: cover;
+}
+
+.display.numbers {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-5);
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+  visibility: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: var(--gap);
+  background-color: var(--gray-1);
+  align-items: center;
+}
+
+.button {
+  color: var(--gray-10);
+  background-color: var(--gray-3);
+  border: 1px solid var(--gray-2);
+  text-shadow: 0 1px 0 var(--gray-2);
+  padding: var(--size-1) var(--size-3);
+
+  &:hover {
+    background-color: var(--gray-4);
+  }
+}
+
+.card {
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius-conditional-3);
+  background-color: var(--gray-2);
+  padding-block: var(--size-7);
+}
+
+select {
+  color: var(--gray-10);
+  background-color: var(--gray-2);
+  border: 1px solid var(--gray-2);
+}
+
+.hidden {
+  visibility: hidden;
+
+}
+
+.visible {
+  visibility: visible;
+}
